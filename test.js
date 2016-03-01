@@ -29,8 +29,8 @@ test('pricing objects look legit', function (assert) {
 })
 
 test('coerced values look legit', function (assert) {
-  Object.keys(pricing).forEach(function (key) {
-    pricing[key].forEach(function (price) {
+  Object.keys(coerced).forEach(function (key) {
+    coerced[key].forEach(function (price) {
       assert.equal(Object.keys(price).length, 3)
       assert.equal(typeof price.percentage, 'number')
       assert.equal(typeof price.fee, 'number')

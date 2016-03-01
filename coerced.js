@@ -16,9 +16,11 @@ module.exports = (function () {
 
     coerced[country] = pricing[country]
       .map(function (option) {
-        option.percentage = decimal(option.percentage)
-        option.fee = centesimal(option.fee || 0)
-        return option
+        var opt = {}
+        opt.percentage = decimal(option.percentage)
+        opt.fee = centesimal(option.fee || 0)
+        opt.description = option.description
+        return opt
       })
   }
   return coerced
