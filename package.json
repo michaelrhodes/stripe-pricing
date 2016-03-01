@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "an object representation of stripe’s international pricing",
   "main": "index.js",
+  "dependencies": {
+    "round-precision": "~1.0.0",
+    "to-centesimal": "~1.0.0"
+  },
   "devDependencies": {
     "array-unique": "~0.2.1",
     "cheerio": "~0.20.0",

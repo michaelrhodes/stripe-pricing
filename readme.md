@@ -14,12 +14,20 @@ $ npm install stripe-pricing
 
 ```js
 var pricing = require('stripe-pricing')
+var coerced = require('stripe-pricing/coerced')
 
 pricing['AU']
 => [
   { percentage: '1.75%', fee: '30¢', description: 'Domestic cards' },
   { percentage: '2.9%', fee: '30¢', description: 'International + AmEx' }
-] 
+]
+
+// This may be helpful if you plan to do maths with the values.
+coerced['AU']
+=> [
+  { percentage: 0.0175, fee: 30, description: 'Domestic cards' },
+  { percentage: 0.029, fee: 30, description: 'International + AmEx' }
+]
 ```
 
 ## License

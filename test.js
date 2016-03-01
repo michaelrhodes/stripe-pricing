@@ -1,5 +1,6 @@
 var test = require('tape')
 var pricing = require('./index')
+var coerced = require('./coerced')
 
 test('keys are ISO 3166-1 alpha-2 country codes', function (assert) {
   Object.keys(pricing).forEach(function (key) {
@@ -22,6 +23,18 @@ test('pricing objects look legit', function (assert) {
       assert.equal(typeof price.percentage, 'string')
       assert.equal(typeof price.description, 'string')
       assert.ok(price.fee === null || typeof price.fee === 'string')
+    })
+  })
+  assert.end()
+})
+
+test('coerced values look legit', function (assert) {
+  Object.keys(pricing).forEach(function (key) {
+    pricing[key].forEach(function (price) {
+      assert.equal(Object.keys(price).length, 3)
+      assert.equal(typeof price.percentage, 'number')
+      assert.equal(typeof price.fee, 'number')
+      assert.equal(typeof price.description, 'string')
     })
   })
   assert.end()
