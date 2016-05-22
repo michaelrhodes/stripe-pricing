@@ -4,8 +4,6 @@ var load = require('./load')
 var match = require('./match')
 
 var entry = 'https://stripe.com/{code}/pricing'
-var percentage = /^([0-9\.]+%).*$/
-var fee = /^.*\+\s+([^\s%]+)$/
 
 module.exports = function (code, done) {
   var page = entry.replace('{code}', code.toLowerCase())
