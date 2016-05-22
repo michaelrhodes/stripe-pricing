@@ -7,7 +7,7 @@ var pricing = require('./lib/pricing')
 countries(tb(function (codes) {
   var map = {}
 
-  var pricings = codes.map(function (code) {
+  var pricings = codes.sort().map(function (code) {
     return function (next) {
       pricing(code, tb(function (details) {
         map[code] = details
