@@ -12,26 +12,31 @@ module.exports = function (code, done) {
   load(page, eb(done, process))
 
   function process ($) {
-    var section = $('section.fees')
-    section.hasClass('split') ?
-      parse(section.find('> div > section > h3')) :
-      parse(section.find('> h2'))
+    var section = $('.Plan--standard')
+    parse(section.find('.Plan-cardPricing'))
 
     function parse (values) {
       var results = []
 
       values.each(function () {
-        var heading = $(this)
-        var text = heading.text().trim()
+        var pricing = $(this)
 
         results.push({
-          percentage: match(text, percentage),
-          fee: match(text, fee),
-          description: ucfirst(
-            heading.next('p')
-              .text()
-              .trim()
-              .replace(/\.$/, '')
+          percentage: pricing
+            .find('.Plan-cardRate-percent')
+            .text()
+            .trim(),
+
+          fee: pricing
+            .find('.Plan-cardRate-fixed')
+            .text()
+            .trim(),
+
+          description: ucfirst(pricing
+            .find('.Plan-cardRate-description')
+            .text()
+            .trim()
+            .replace(/\.$/, '')
           )
         })
       })

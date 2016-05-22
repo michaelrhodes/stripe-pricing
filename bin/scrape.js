@@ -19,7 +19,7 @@ countries(tb(function (codes) {
   series(pricings, tb(function () {
     console.log(
       'module.exports = ' +
-        stringify(map, { maxLength: 100 })
+        stringify(map, { maxLength: 120 })
           .replace(/"([^"]+)":/g, '$1:')
           .replace(/\{([a-z])/g, '{ $1')
           .replace(/"\}/g, '" }')
