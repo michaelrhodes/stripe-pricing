@@ -12,15 +12,15 @@ module.exports = {
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards' }
   ],
   BR: [{ percentage: '3.99%', fee: 'R$0.50', description: 'Per successful card charge' }],
-  CA: [{ percentage: '2.9%', fee: '30¢', description: 'Per successful card charge' }],
-  CH: [{ percentage: '2.9%', fee: '30c', description: 'Per successful card charge' }],
+  CA: [{ percentage: '2.9%', fee: 'CA$0.30', description: 'Per successful card charge' }],
+  CH: [{ percentage: '2.9%', fee: 'CHF0.30', description: 'Per successful card charge' }],
   DE: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards' },
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards' }
   ],
   DK: [
-    { percentage: '1.4%', fee: '1.8kr', description: 'For European cards' },
-    { percentage: '2.9%', fee: '1.8kr', description: 'For non-European cards' }
+    { percentage: '1.4%', fee: '1.80kr', description: 'For European cards' },
+    { percentage: '2.9%', fee: '1.80kr', description: 'For non-European cards' }
   ],
   ES: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards' },
@@ -38,7 +38,7 @@ module.exports = {
     { percentage: '1.4%', fee: '20p', description: 'For European cards' },
     { percentage: '2.9%', fee: '20p', description: 'For non-European cards' }
   ],
-  HK: [{ percentage: '3.4%', fee: '$2.35', description: 'Per successful card charge' }],
+  HK: [{ percentage: '3.4%', fee: 'HK$2.35', description: 'Per successful card charge' }],
   IE: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards excluding VAT' },
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards excluding VAT' }
@@ -61,14 +61,14 @@ module.exports = {
     { percentage: '2.4%', fee: '2kr', description: 'For Norwegian cards' },
     { percentage: '2.9%', fee: '2kr', description: 'For International cards' }
   ],
-  NZ: [{ percentage: '2.9%', fee: '30', description: 'Per successful card charge' }],
+  NZ: [{ percentage: '2.9%', fee: 'NZ$0.30', description: 'Per successful card charge' }],
   PT: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards' },
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards' }
   ],
   SE: [
-    { percentage: '1.4%', fee: '1.8kr', description: 'For European cards' },
-    { percentage: '2.9%', fee: '1.8kr', description: 'For non-European cards' }
+    { percentage: '1.4%', fee: '1.80kr', description: 'For European cards' },
+    { percentage: '2.9%', fee: '1.80kr', description: 'For non-European cards' }
   ],
   SG: [{ percentage: '3.4%', fee: '$0.50', description: 'Per successful card charge' }],
   US: [{ percentage: '2.9%', fee: '30¢', description: 'Per successful card charge' }]
