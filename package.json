@@ -1,11 +1,11 @@
 {
   "name": "stripe-pricing",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "an object representation of stripe’s international pricing",
   "main": "index.js",
   "dependencies": {
     "round-precision": "~1.0.0",
-    "to-centesimal": "~1.0.0"
+    "to-centesimal": "~1.0.1"
   },
   "devDependencies": {
     "array-unique": "~0.2.1",
