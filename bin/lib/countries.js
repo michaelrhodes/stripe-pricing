@@ -9,11 +9,11 @@ module.exports = function (done) {
   load(entry, eb(done, process))
 
   function process ($) {
-    done(null, $('.country-selector ul a')
+    done(null, $('.countryPicker ul a')
       .map(function () {
-        var href = $(this).attr('href')
-        var code = get(url.parse(href, true), 'query.country') 
-        return code
+        var href = url.parse($(this).attr('href'), true)
+        var code = get(href, 'query.country') || href.hash.substr(1)
+        return code.length === 2 ? code : null
       })
       .filter(function () {
         return !!this
