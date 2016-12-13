@@ -5,7 +5,7 @@ module.exports = {
   ],
   AU: [
     { percentage: '1.75%', fee: '30¢', description: 'For domestic cards' },
-    { percentage: '2.9%', fee: '30¢', description: 'For International and Amex cards' }
+    { percentage: '2.9%', fee: '30¢', description: 'For International cards' }
   ],
   BE: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards' },
