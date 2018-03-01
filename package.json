@@ -1,8 +1,22 @@
 {
   "name": "stripe-pricing",
+  "author": "Michael Rhodes",
   "version": "1.1.3",
-  "description": "an object representation of stripe’s international pricing",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelrhodes/stripe-pricing"
+  },
+  "description": "an object representation of stripe’s international pricing",
+  "keyword": [
+    "stripe",
+    "pricing"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "node bin/scrape.js > index.js",
+    "test": "tape test.js"
+  },
   "dependencies": {
     "round-precision": "~1.0.0",
     "to-centesimal": "~1.0.2"
@@ -17,23 +31,5 @@
     "run-series": "~1.1.4",
     "tape": "~4.4.0",
     "ucfirst": "~1.0.0"
-  },
-  "scripts": {
-    "build": "node bin/scrape.js > index.js",
-    "test": "tape test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:michaelrhodes/stripe-pricing"
-  },
-  "keywords": [
-    "stripe",
-    "pricing"
-  ],
-  "author": "Michael Rhodes",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/michaelrhodes/stripe-pricing/issues"
-  },
-  "homepage": "https://github.com/michaelrhodes/stripe-pricing"
+  }
 }
