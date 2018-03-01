@@ -12,8 +12,8 @@ module.exports = {
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards' }
   ],
   BR: [{ percentage: '3.99%', fee: 'R$0.50', description: 'Per successful card charge' }],
-  CA: [{ percentage: '2.9%', fee: 'CA$0.30', description: 'Per successful card charge' }],
-  CH: [{ percentage: '2.9%', fee: 'CHF0.30', description: 'Per successful card charge' }],
+  CA: [{ percentage: '2.9%', fee: 'C$0.30', description: 'Per successful card charge' }],
+  CH: [{ percentage: '2.9%', fee: '0.30Fr', description: 'Per successful card charge' }],
   DE: [
     { percentage: '1.4%', fee: '€0.25', description: 'For European cards' },
     { percentage: '2.9%', fee: '€0.25', description: 'For non-European cards' }
