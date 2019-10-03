@@ -9,8 +9,8 @@ countries(tb(function (codes) {
 
   var pricings = codes.sort().map(function (code) {
     return function (next) {
-      pricing(code, tb(function (details) {
-        map[code] = details
+      pricing('en-' + code, tb(function (details) {
+        map[code.toUpperCase()] = details
         next()
       }))
     }

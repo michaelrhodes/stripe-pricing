@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "node bin/scrape.js > index.js",
+    "build": "node bin/scrape.js 1> index.js",
     "test": "tape test.js"
   },
   "dependencies": {
